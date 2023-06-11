@@ -6,7 +6,18 @@ namespace Pattern___Factory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Barrack barrack = new AllianceBarrack();
+
+            barrack.SpawnSoldier("Kven", SoldierType.Range);
+
+            barrack = new HordeBarrack();
+
+            barrack.SpawnSoldier("Gal", SoldierType.Mage);
+            barrack.SpawnSoldier("Leg", SoldierType.Mage);
+            barrack.SpawnSoldier("Rigl", SoldierType.Mage);
+            barrack.SpawnSoldier("Tan", SoldierType.Warrior);
+            Console.ReadKey();
         }
     }
 }
+
