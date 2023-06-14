@@ -6,6 +6,8 @@ namespace Pattern___Factory
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Factory method:");
+
             Barrack barrack = new AllianceBarrack();
 
             barrack.SpawnSoldier("Kven", SoldierType.Range);
@@ -18,7 +20,9 @@ namespace Pattern___Factory
             barrack.SpawnSoldier("Tan", SoldierType.Warrior);
 
             Console.WriteLine();
-            Console.WriteLine("Командуем:");
+            Console.WriteLine("Abstract factory:");
+            Console.WriteLine();
+
             CommandBook commandBook = new AllianceCommandBook();
 
             commandBook.BattleCommand("White Wing", ArmyType.Balanced);
