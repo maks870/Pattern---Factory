@@ -1,11 +1,11 @@
 ﻿using System;
 
-class HordeWarrior : Soldier
+class HordeWarrior : Warrior
 {
     public HordeWarrior(string name) : base(name)
     {
         race = "Orc";
-        type = "Ogrimm Grinder";
+        rank = "Ogrimm Grinder";
         this.name += "'erk";
     }
 

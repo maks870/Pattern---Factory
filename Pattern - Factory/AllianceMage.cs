@@ -1,11 +1,11 @@
 ﻿using System;
 
-class AllianceMage : Soldier
+class AllianceMage : Mage
 {
     public AllianceMage(string name) : base(name)
     {
         race = "Dark Elf";
-        type = "Elemental sorcerer";
+        rank = "Elemental sorcerer";
         this.name += " the child of Dark";
     }
 

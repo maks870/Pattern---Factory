@@ -4,7 +4,8 @@ abstract class Soldier
 {
     protected string name;
     protected string race;
-    protected string type;
+    protected string rank;
+    protected SoldierType type;
 
     public Soldier(string name)
     {
@@ -14,7 +15,7 @@ abstract class Soldier
     public void Prepare()
     {
         Console.WriteLine();
-        Console.WriteLine($"New {type} on the way!");
+        Console.WriteLine($"New {type}: {rank} on the way!");
         Console.WriteLine($"Preparing {name} the {race} for spawn");
     }
 
@@ -25,8 +26,7 @@ abstract class Soldier
 
     public virtual void Trainig()
     {
-        Console.WriteLine($"Teach {type} for new skill:");
+        Console.WriteLine($"Teach {rank} for new skill:");
     }
 }
-
 

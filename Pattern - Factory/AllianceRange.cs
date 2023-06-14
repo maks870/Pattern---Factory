@@ -1,11 +1,11 @@
 ﻿using System;
 
-class AllianceRange : Soldier
+class AllianceRange : Range
 {
     public AllianceRange(string name) : base(name)
     {
         race = "Light Elf";
-        type = "Forest bowman";
+        rank = "Forest bowman";
         this.name += " the child of Light";
     }
 

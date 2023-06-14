@@ -16,6 +16,19 @@ namespace Pattern___Factory
             barrack.SpawnSoldier("Leg", SoldierType.Mage);
             barrack.SpawnSoldier("Rigl", SoldierType.Mage);
             barrack.SpawnSoldier("Tan", SoldierType.Warrior);
+
+            Console.WriteLine();
+            Console.WriteLine("Командуем:");
+            CommandBook commandBook = new AllianceCommandBook();
+
+            commandBook.BattleCommand("White Wing", ArmyType.Balanced);
+            Console.WriteLine();
+            commandBook.BattleCommand("Sir Arthas", SoldierType.Warrior);
+            Console.WriteLine();
+            commandBook = new HordeCommandBook();
+            commandBook.BattleCommand("Red mist Legion", ArmyType.Melee);
+            Console.WriteLine();
+
             Console.ReadKey();
         }
     }

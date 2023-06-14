@@ -1,11 +1,11 @@
 ﻿using System;
 
-class AllianceWarrior : Soldier
+class AllianceWarrior : Warrior
 {
     public AllianceWarrior(string name) : base(name)
     {
         race = "Human";
-        type = "Holy knight";
+        rank = "Holy knight";
         this.name = "Sir " + this.name;
     }
 
